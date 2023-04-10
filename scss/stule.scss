@@ -1,0 +1,46 @@
+$blue-color: #0285E4;
+$white-color: #ffffff;
+$white-color2: #EBEBEB;
+
+@import "_header";
+// @import "_modal";
+// @import "_infoCart";
+@import "_sidebar";
+// @import "_firsrArticle";
+@import "_main";
+@import "_footer";
+
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+select{
+  cursor: pointer;
+}
+
+.box {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+}
+
+

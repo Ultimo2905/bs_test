@@ -1,0 +1,134 @@
+main {
+    padding-top: 3.5rem;
+    flex: 1 1 auto;
+
+    .cart {
+        &__block {
+            columns: 2 290px;
+            column-gap: 24px;
+
+            .card {
+                margin-bottom: 24px;
+                width: 100%;
+                max-width: 352px;
+
+                .card-text {
+                    transition: 0.5s ease;
+                    margin-bottom: 68px;
+                }
+
+                &__btn {
+                    &::before {
+                        content: '';
+                        width: 100%;
+                        height: 2px;
+                        background-color: #EBEBEB;
+                        position: absolute;
+                        bottom: 72px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+
+    }
+        .card-title {
+            font-family: 'Commissioner';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 150%;
+            color: #292929;
+        }
+
+    .card-body.hide .card-text {
+        max-height: 3.2rem;
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+        .card-body.max-height .card-text {
+        max-height: 3.2rem;
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+
+    .btn-yelow {
+        padding: 7px 16px 9px;
+        max-width: 162px;
+        height: 40px;
+        background: #ED7135;
+        border-radius: 8px;
+        color: #ffffff;
+        margin: 0 1rem 0 0;
+
+        &:hover {
+            background: #d88c66;
+            color: #e7e2e2;
+        }
+    }
+
+    .btn-share {
+        padding: 7px 16px 9px;
+        max-width: 80px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 2px solid #EBEBEB;
+        border-radius: 8px;
+        margin: 0;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #222222;
+
+        &:hover {
+            color: #2f2f2f;
+            background: #e7e2e2;
+        }
+    }
+}
+
+.card__btn-read-more {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #222222;
+    position: absolute;
+    left: 16px;
+    bottom: 92px;
+}
+
+#pills-profile {
+    -moz-columns: 2 356px;
+    columns: 2 356px;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
+}
+
+.modal-backdrop.show {
+    z-index: 22;
+}
+
+@media only screen and (max-width: 991px) {
+    main {
+        padding-top: 0.5rem;
+    }
+
+    .video__items {
+        display: flex;
+        margin-bottom: 16px;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        margin: 24px auto 0 auto;
+    }
+
+    main .cart__block .card {
+        max-width: unset;
+    }
+}

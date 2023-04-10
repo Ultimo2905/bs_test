@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="New Test">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+    <meta name="author" content="Volodymyr Kotorazhuk">
+    <title>BS_TEST</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stule.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="col-lg-4">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav__item" role="presentation">
+                                    <button class="nav__link active" id="photos-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Photos</button>
+                                </li>
+                                <li class="nav__item" role="presentation">
+                                    <button class="nav__link" id="video-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Videos</button>
+                                </li>
+                                <li class="nav__item" role="presentation">
+                                    <button class="nav__link" id="podcasts-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Podcasts</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-8 navbar__control-item">
+                            <fieldset class="navbar__search">
+                                <span></span>
+                                <input class="navbar__search-control" type="search" placeholder="Search for anything..."
+                                    aria-label="Search">
+                            </fieldset>
+                            <div class="navbar__lang-singup">
+                                <div class="navbar__language-select">
+                                    <select name="language" id="language">
+                                        <option value="english"><span>English</span></option>
+                                        <option value="ukraine">Ukraine</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        Sing In
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="wraper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 sidebar">
+                        <ul>
+                            <li class="sidebar__item">
+                                <a href="#" class="sidebar__link all-photos">All photos</a>
+                            </li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link selfies">Selfies</a></li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link recent">Recent</a></li>
+                            <li class="sidebar__item"><a href="#" class="sidebar__link deleted">Deleted</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="photos-tab">
+                                <div class="cart__block">
+                                    <div class="card">
+                                        <img src="./images/thumbnail.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Heading</h5>
+                                            <p class="card-text">
+                                                Some quick example text to build on the heading and
+                                                make up the bulk of the card'sSome quick example text to build on the
+                                                card
+                                                title and content.
+                                            </p>
+                                            <div class="card__btn">
+                                                <a href="#" class="btn btn-yelow">Save to collection</a>
+                                                <a href="#" class="btn btn-share">Share</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./images/thumbnail (1).jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Heading</h5>
+                                            <p class="card-text">
+                                                Some quick example text to build,
+                                                make up the bulk of the card's content.
+                                            </p>
+                                            <div class="card__btn">
+                                                <a href="#" class="btn btn-yelow">Save to collection</a>
+                                                <a href="#" class="btn btn-share">Share</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./images/thumbnail (2).jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Heading</h5>
+                                            <p class="card-text">
+                                                Some quick example text to build on the heading an.
+                                            </p>
+                                            <div class="card__btn">
+                                                <a href="#" class="btn btn-yelow">Save to collection</a>
+                                                <a href="#" class="btn btn-share">Share</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="./images/thumbnail (3).jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Heading</h5>
+                                            <p class="card-text">
+                                                Some quick example text to build on the heading and
+                                                make content.
+                                            </p>
+                                            <div class="card__btn">
+                                                <a href="#" class="btn btn-yelow">Save to collection</a>
+                                                <a href="#" class="btn btn-share">Share</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="video-tab">
+                                <div class="video__items">
+                                </div>
+                                <div class="video__items">
+                                    <iframe width="300" height="200" src="https://www.youtube.com/embed/-ahNiJAF5MA"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="podcasts-tab">
+                                <article>
+                                    <h2>Bla-bla</h2>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illo unde
+                                        incidunt eveniet sunt eligendi, eaque quos, sequi molestias aliquam aperiam at,
+                                        velit doloremque harum provident praesentium quia fuga ducimus!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam laudantium
+                                        molestiae atque! Natus, velit? Ipsam saepe ad dolore iure? Dignissimos doloribus
+                                        odit debitis a dolorum in cupiditate vitae eum.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur laborum,
+                                        possimus saepe at ipsa quibusdam repellendus, animi natus eum quod, vero
+                                        provident doloremque? Aspernatur repellendus voluptatum cumque, similique ipsum
+                                        dolor!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illo unde
+                                        incidunt eveniet sunt eligendi, eaque quos, sequi molestias aliquam aperiam at,
+                                        velit doloremque harum provident praesentium quia fuga ducimus!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam laudantium
+                                        molestiae atque! Natus, velit? Ipsam saepe ad dolore iure? Dignissimos doloribus
+                                        odit debitis a dolorum in cupiditate vitae eum.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur laborum,
+                                        possimus saepe at ipsa quibusdam repellendus, animi natus eum quod, vero
+                                        provident doloremque? Aspernatur repellendus voluptatum cumque, similique ipsum
+                                        dolor!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illo unde
+                                        incidunt eveniet sunt eligendi, eaque quos, sequi molestias aliquam aperiam at,
+                                        velit doloremque harum provident praesentium quia fuga ducimus!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam laudantium
+                                        molestiae atque! Natus, velit? Ipsam saepe ad dolore iure? Dignissimos doloribus
+                                        odit debitis a dolorum in cupiditate vitae eum.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur laborum,
+                                        possimus saepe at ipsa quibusdam repellendus, animi natus eum quod, vero
+                                        provident doloremque? Aspernatur repellendus voluptatum cumque, similique ipsum
+                                        dolor!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illo unde
+                                        incidunt eveniet sunt eligendi, eaque quos, sequi molestias aliquam aperiam at,
+                                        velit doloremque harum provident praesentium quia fuga ducimus!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam laudantium
+                                        molestiae atque! Natus, velit? Ipsam saepe ad dolore iure? Dignissimos doloribus
+                                        odit debitis a dolorum in cupiditate vitae eum.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur laborum,
+                                        possimus saepe at ipsa quibusdam repellendus, animi natus eum quod, vero
+                                        provident doloremque? Aspernatur repellendus voluptatum cumque, similique ipsum
+                                        dolor!
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae illo unde
+                                        incidunt eveniet sunt eligendi, eaque quos, sequi molestias aliquam aperiam at,
+                                        velit doloremque harum provident praesentium quia fuga ducimus!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nam laudantium
+                                        molestiae atque! Natus, velit? Ipsam saepe ad dolore iure? Dignissimos doloribus
+                                        odit debitis a dolorum in cupiditate vitae eum.
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur laborum,
+                                        possimus saepe at ipsa quibusdam repellendus, animi natus eum quod, vero
+                                        provident doloremque? Aspernatur repellendus voluptatum cumque, similique ipsum
+                                        dolor!
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer" id="main_footer">
+            <p>New Test<span>© 2023 New Test All rights reserved.</span></p>
+        </div>
+
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

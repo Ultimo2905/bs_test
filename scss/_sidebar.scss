@@ -1,0 +1,73 @@
+.sidebar {
+    ul {
+        padding: 0;
+    }
+
+    &__item {
+        margin: 9px 0;
+        align-items: center;
+        display: flex;
+        padding: 7px 0;
+    }
+
+    &__link {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #666666;
+        position: relative;
+        max-width: 273px;
+        width: 100%;
+        height: 40px;
+        padding: 7px 44px;
+        border-radius: 8px;
+        transition: .3s;
+
+        &:hover {
+            background: #ED7135;
+            color: #ffffff;
+        }
+    }
+
+    .all-photos::before {
+        content: '';
+        background-image: url('../images/pictures-shot-d.svg');
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 7px;
+        left: 12px;
+    }
+
+    .selfies::before {
+        content: '';
+        background-image: url('../images/smile.svg');
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 7px;
+        left: 12px;
+    }
+
+    .recent::before {
+        content: '';
+        background-image: url('../images/time.svg');
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 7px;
+        left: 12px;
+    }
+
+    .deleted::before {
+        content: '';
+        background-image: url('../images/trash-can.svg');
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 7px;
+        left: 12px;
+    }
+}
